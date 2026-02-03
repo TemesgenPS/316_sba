@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Page</title>
+  <link rel="stylesheet" href="../css/jssba.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<h1>Track your level. Find your matches. Compete.</h1>
+
+<div class="register-page">
+  <form action="#">
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" id="firstName" placeholder="Enter Your First Name" required><br>
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" id="lastName" placeholder="Enter Your Last Name"><br>
+    <label for="Email">Email</label>
+    <input type="text" name="Email" id="Email" placeholder="Enter Your Email"><br>
+    <label for="Password">Password</label>
+    <input type="password" name="Password" id="Password" placeholder="Enter Your Password"><br>
+    <label for="CPassword">Confirm Password</label>
+    <input type="password" name="CPassword" id="CPassword" placeholder="Re-Enter Your Password"><br>
+    <fieldset>
+      <legend>Gender</legend>
+      <label for="radio1">Female</label>
+      <input type="radio" name="radio" id="radio1">
+      <label for="radio2">Male</label>
+      <input type="radio" name="radio" id="radio2">
+      <label for="radio3">Rather not say</label>
+      <input type="radio" name="radio" id="radio3">
+    </fieldset>
+
+    <fieldset>
+      <legend> Date of Birth </legend>
+      <input type="date" name="DOB" id="DOB">
+    </fieldset>
+
+    <fieldset>
+      <legend>Court Preference</legend>
+      <label for="checkbox">Hard Court</label><input type="checkbox" name="checkbox" id="checkbox">
+      <label for="checkbox2">Clay Court</label><input type="checkbox" name="checkbox2" id="checkbox2">
+      <label for="checkbox3">Grass Court</label><input type="checkbox" name="checkbox3" id="checkbox3">
+    </fieldset>
+    <fieldset>
+      <legend>Skill Level</legend>
+      <select id="skill" name="skill">
+        <option>Beginner (0-4 UTR)</option>
+        <option>Intermediate (5-8 UTR)</option>
+        <option>Advanced (9+ UTR)</option>
+      </select>
+    </fieldset>
+    <input type="button" value="Register" id="register-button">
+  </form>
+</div>
+
+<div class="link-group mt-3">
+  <a href="login.html" class="themed-link">Already have an account? Login here!</a>
+</div>
+
+
+<div style="margin-bottom: 15px; margin-top: 10px; text-align: center;">
+  <a href="bssite.html" class="demo-button">
+    Continue as Demo User
+  </a>
+</div>
+
+
+<footer class="site-footer mt-5">
+  <div class="container text-center py-3">
+    &copy; 2026 TennisComp. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
+

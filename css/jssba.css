@@ -1,0 +1,124 @@
+body{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #588157;
+}
+
+.register-page{
+    background-color:#A3B18A;
+    padding: 20px 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 0 10px 20px #333333;
+    display: flex;
+    flex-direction: column;
+}
+
+#register-button{
+    background-color: #3A5A40;
+    color: white;
+    border: none;
+    box-shadow: 0 10px 20px gray;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#register-button:hover{
+    background-color: #344E41;
+    animation: pulse 0.4s ease-in-out;
+
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+input, label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.site-footer {
+    background-color: #3A5A40;
+    color: #A3B18A;
+    font-size: 0.9rem;
+    border-top: 2px solid #344E41;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0 10px;
+    color: #222;
+    letter-spacing: 0.2px;
+}
+
+label {
+    font-weight: 500;
+}
+
+form > label {
+    display: block;
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: center;
+    justify-content: space-between;
+    border: 2px solid #3A5A40;
+}
+
+.themed-link {
+    color: #A3B18A;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.themed-link:hover {
+    color: #3A5A40;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link-group {
+    text-align: center;
+}
+
+.demo-button {
+    display: inline-block;
+    background-color: #A3B18A;
+    color: #344E41;
+    padding: 8px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.demo-button:hover {
+    background-color: #3A5A40;
+    color: #A3B18A;
+    cursor: pointer;
+}
