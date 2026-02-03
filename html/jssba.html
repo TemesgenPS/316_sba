@@ -18,46 +18,48 @@
 <h1>Track your level. Find your matches. Compete.</h1>
 
 <div class="register-page">
-  <form action="#">
+  <form action="#" id="register-form">
     <label for="firstName">First Name</label>
     <input type="text" name="firstName" id="firstName" placeholder="Enter Your First Name" required><br>
     <label for="lastName">Last Name</label>
-    <input type="text" name="lastName" id="lastName" placeholder="Enter Your Last Name"><br>
+    <input type="text" name="lastName" id="lastName" placeholder="Enter Your Last Name" required><br>
     <label for="Email">Email</label>
-    <input type="text" name="Email" id="Email" placeholder="Enter Your Email"><br>
+    <input type="email" name="Email" id="Email" placeholder="Enter Your Email" required><br>
     <label for="Password">Password</label>
-    <input type="password" name="Password" id="Password" placeholder="Enter Your Password"><br>
+    <input type="password" name="Password" id="Password" placeholder="Enter Your Password" minlength="8" maxlength="20" required><br>
     <label for="CPassword">Confirm Password</label>
-    <input type="password" name="CPassword" id="CPassword" placeholder="Re-Enter Your Password"><br>
+    <input type="password" name="CPassword" id="CPassword" placeholder="Re-Enter Your Password" minlength="8" maxlength="20" required><br>
 
 
     <fieldset>
-      <legend>Gender</legend>
+      <legend>Gender <span style="color: red;">*</span></legend>
       <label for="radio1">Female</label>
-      <input type="radio" name="radio" id="radio1">
+      <input type="radio" name="radio" id="radio1" required>
       <label for="radio2">Male</label>
-      <input type="radio" name="radio" id="radio2">
+      <input type="radio" name="radio" id="radio2" required>
       <label for="radio3">Rather not say</label>
-      <input type="radio" name="radio" id="radio3">
+      <input type="radio" name="radio" id="radio3" required>
     </fieldset>
 
     <fieldset>
-      <legend> Date of Birth </legend>
-      <input type="date" name="DOB" id="DOB">
+      <legend> Date of Birth <span style="color: red;">*</span></legend>
+      <input type="date" name="DOB" id="DOB" required>
     </fieldset>
 
     <fieldset>
-      <legend>Court Preference</legend>
-      <label for="checkbox">Hard Court</label><input type="checkbox" name="checkbox" id="checkbox">
-      <label for="checkbox2">Clay Court</label><input type="checkbox" name="checkbox2" id="checkbox2">
-      <label for="checkbox3">Grass Court</label><input type="checkbox" name="checkbox3" id="checkbox3">
+      <legend>Court Preference <span style="color: red;">*</span></legend>
+      <label for="checkbox">Hard Court</label><input type="checkbox" name="courtPref" id="checkbox" value="hard">
+      <label for="checkbox2">Clay Court</label><input type="checkbox" name="courtPref" id="checkbox2" value="clay">
+      <label for="checkbox3">Grass Court</label><input type="checkbox" name="courtPref" id="checkbox3" value="grass">
     </fieldset>
+
     <fieldset>
-      <legend>Skill Level</legend>
-      <select id="skill" name="skill">
-        <option>Beginner (0-4 UTR)</option>
-        <option>Intermediate (5-8 UTR)</option>
-        <option>Advanced (9+ UTR)</option>
+      <legend>Skill Level <span style="color: red;">*</span></legend>
+      <select id="skill" name="skill" required>
+        <option value="">-- Select Skill Level --</option>
+        <option value="beginner">Beginner (0-4 UTR)</option>
+        <option value="intermediate">Intermediate (5-8 UTR)</option>
+        <option value="advanced">Advanced (9+ UTR)</option>
       </select>
     </fieldset>
     <input type="submit" value="Register" id="register-button">
@@ -82,6 +84,12 @@
   </div>
 </footer>
 <script src="../js/jssba.js"></script>
+<template id="success-template">
+  <div class="success-message">
+    <p>✓ Registration successful!</p>
+    <p>Welcome to TennisComp!</p>
+  </div>
+</template>
 </body>
 </html>
 
