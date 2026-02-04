@@ -6,6 +6,13 @@ const inputs = document.querySelectorAll('input')
 const passwordInput = document.getElementById('Password')
 const confirmPasswordInput = document.getElementById('CPassword')
 
+// Setting DOB restrictions | 13-100 yrs old | previously had static restrictions in HTML but decided dynamic calculations would be the better option
+const dobInput = document.getElementById('DOB');
+const today = new Date();
+const maxDate = new Date(today.getFullYear() - 13, today.getMonth(), today.getDate());
+dobInput.max = maxDate.toISOString().split('T')[0];
+const minDate = new Date(today.getFullYear() - 100, today.getMonth(), today.getDate());
+dobInput.min = minDate.toISOString().split('T')[0];
 
 registerForm.addEventListener('submit',(e) => {
     e.preventDefault(); // prevents page reload so JS can run
